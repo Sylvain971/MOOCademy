@@ -4,7 +4,7 @@ class Lesson < ApplicationRecord
 	belongs_to :course
 	
 	# S'assurer que ces éléments sont bien présents.
-	validates :title, :body,
+	validates :title, :body, :course,
               presence: true
 
 end
